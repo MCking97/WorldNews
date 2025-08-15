@@ -1,5 +1,6 @@
 {
   "name": "my-app",
+  "homepage": "https://MCking97.github.io/WorldNews",
   "private": true,
   "version": "0.0.0",
   "type": "module",
