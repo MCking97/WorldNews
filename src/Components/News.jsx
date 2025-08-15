@@ -5,7 +5,7 @@ export default class News extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      articles: [],  // ✅ Always an array
+      articles: [],  
       loading: true,
       error: null,
     };
@@ -13,7 +13,7 @@ export default class News extends Component {
 
   async componentDidMount() {
     try {
-      const url = `https://newsapi.org/v2/top-headlines?country=us&category=${this.props.category}&apiKey=YOUR_API_KEY`;
+      const url = `https://newsapi.org/v2/top-headlines?country=us&category=${this.props.category}&apiKey=718e2630c8ae4189a5615d8c72b27bf1`;
       const response = await fetch(url);
 
       if (!response.ok) {
@@ -34,7 +34,7 @@ export default class News extends Component {
         <h2
           className="text-center text-capitalize fw-bold my-4"
           style={{
-            color: "#FFD700", // Bright yellow
+            color: "#FFD700", 
             fontSize: "2.5rem",
             textShadow: "1px 1px 4px rgba(0,0,0,0.3)",
             fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
